@@ -15,21 +15,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: false
 });
 
-// routes
-app.post("./workoutSchema", async(req, res) => {
-  try {
-      const Myworkout = await db.Workouts.create({
-        name: req.body.name
-      });
-      res.json(Myworkout)
-  } catch (error) {
-    console.log(error);
-    res.status(500).json(error);
-  }
-});
-
-
-app.use(require(""));
+app.use(require("./routes/Routes"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
