@@ -9,9 +9,9 @@ MongoDB
 Moongoose
 
 # Heroku App
-
+https://gentle-temple-24867.herokuapp.com/index.html
 # Author 
 Ligaya Herndon
 # Screenshot
-
+<img src="./images/myworkoutapp.png" alt="WorkoutAPP">
 
